@@ -7,12 +7,16 @@ import { BookingComponent } from './booking/booking.component';
 import { ViewBookingsComponent } from './view-bookings/view-bookings.component';
 import { BookingDetailsComponent } from './booking-details/booking-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewByDateComponent } from './view-by-date/view-by-date.component';
+import { ViewByIdComponent } from './view-by-id/view-by-id.component';
 
 
 const allLinks:Routes = [
   {path:'addBooking',component:BookingComponent},
   {path:'bookings',component:BookingDetailsComponent},
   {path:'bookingsId',component:ViewBookingsComponent},
+  {path:'viewById',component:ViewByIdComponent},
+  {path:'viewByDate',component:ViewByDateComponent}
  
 ]
 
@@ -22,6 +26,8 @@ const allLinks:Routes = [
     BookingComponent,
     ViewBookingsComponent,
     BookingDetailsComponent,
+    ViewByDateComponent,
+    ViewByIdComponent,
 
   ],
   imports: [

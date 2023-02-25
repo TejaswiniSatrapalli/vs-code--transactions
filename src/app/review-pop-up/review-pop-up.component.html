@@ -1,0 +1,26 @@
+<hr/>
+ Booking Info <input type="text" value= "{{1}}" #hotelId readonly="true"/>
+ <button (click)="addReview(hotelId.value)"> review</button>
+ <br/>
+ <div *ngIf="showReviewPanel == true">
+        Add Review for Hotel {{reviewHotelId}} {{reviewHotelName}}<br/>
+        Star 
+        <table>
+            <tr>
+                <td> <input type="radio" name="reviewPoints" value="0"/>0  </td>
+                <td> <input type="radio" name="reviewPoints" value="1"/>1  </td>
+                <td> <input type="radio" name="reviewPoints" value="2"/>2  </td>
+                <td> <input type="radio" name="reviewPoints" value="3"/>3  </td>
+                <td> <input type="radio" name="reviewPoints" value="4"/>4  </td>
+                <td> <input type="radio" name="reviewPoints" value="5"/>5  </td>
+                
+                
+            </tr>
+            <input type="text"/>
+            <button> Add Review</button>
+            <button (click)="closePanel()"> Add Review</button>
+            
+        </table>
+
+ </div>
+ 
